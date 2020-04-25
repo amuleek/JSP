@@ -6,3 +6,4 @@ Steps involved for Jsp life cycle:
 >Instantiation(Object of the generated Servlet is created)
 >Initialization(jspInit() method is invoked by the container)
 >Request processing(_jspService()is invoked by the container)
+>JSP Cleanup (jspDestroy() method is invoked by the container)
