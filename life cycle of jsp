@@ -7,3 +7,7 @@ Steps involved for Jsp life cycle:
 >Initialization(jspInit() method is invoked by the container)
 >Request processing(_jspService()is invoked by the container)
 >JSP Cleanup (jspDestroy() method is invoked by the container)
+
+JSP Cleanup :
+In order to remove the JSP from use by the container or to destroy method for servlets jspDestroy()method is used.
+This method is called once, if you need to perform any cleanup task like closing open files, releasing database connections jspDestroy() can be overridden.
