@@ -1,1 +1,8 @@
 A Java Server Page life cycle is defined as the process started with its creation which later translated to a servlet and afterward servlet lifecycle comes into play. 
+Steps involved for Jsp life cycle:
+>Translation of JSP page to Servlet
+>Compilation of JSP page(Compilation of JSP into test.java)
+>Classloading (test.java to test.class)
+>Instantiation(Object of the generated Servlet is created)
+>Initialization(jspInit() method is invoked by the container)
+>Request processing(_jspService()is invoked by the container)
