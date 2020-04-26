@@ -16,4 +16,5 @@ public void jspInit()
 }
 Typically, initialization is performed only once and as with the servlet init method, you generally initialize database connections, open files, and create lookup tables in the jspInit method.
 >Execution:
+This phase of the JSP life cycle represents all interactions with requests until the JSP is destroyed.
 >Cleanup:
