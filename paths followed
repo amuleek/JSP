@@ -14,5 +14,6 @@ public void jspInit()
 {
    // Initialization code...
 }
+Typically, initialization is performed only once and as with the servlet init method, you generally initialize database connections, open files, and create lookup tables in the jspInit method.
 >Execution:
 >Cleanup:
