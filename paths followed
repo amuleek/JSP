@@ -9,7 +9,7 @@ The compilation process involves three steps −
 >Initialization:
 When a container loads a JSP it invokes the jspInit() method before servicing any requests. 
 If you need to perform JSP-specific initialization, override the jspInit() method −
-for example :
+
 public void jspInit()
 {
    // Initialization code...
@@ -17,4 +17,11 @@ public void jspInit()
 Typically, initialization is performed only once and as with the servlet init method, you generally initialize database connections, open files, and create lookup tables in the jspInit method.
 >Execution:
 This phase of the JSP life cycle represents all interactions with requests until the JSP is destroyed.
+Whenever a browser requests a JSP and the page has been loaded and initialized, the JSP engine invokes the _jspService() method in the JSP.
+The _jspService() method takes an HttpServletRequest and an HttpServletResponse as its parameters as follows −
+
+void _jspService(HttpServletRequest request, HttpServletResponse response) 
+{
+   // Service handling code...
+}
 >Cleanup:
