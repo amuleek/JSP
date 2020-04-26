@@ -27,3 +27,12 @@ void _jspService(HttpServletRequest request, HttpServletResponse response)
 The _jspService() method of a JSP is invoked on request basis.
 This is responsible for generating the response for that request and this method is also responsible for generating responses to all seven of the HTTP methods, i.e, GET, POST, DELETE, etc.
 >Cleanup:
+The destruction phase of the JSP life cycle represents when a JSP is being removed from use by a container.
+The jspDestroy() method is the JSP equivalent of the destroy method for servlets.
+Override jspDestroy when you need to perform any cleanup, such as releasing database connections or closing open files.
+The jspDestroy() method has the following form −
+
+public void jspDestroy() 
+{
+   // Your cleanup code goes here.
+}
