@@ -7,5 +7,12 @@ The compilation process involves three steps −
 -Turning the JSP into a servlet.
 -Compiling the servlet.
 >Initialization:
-Execution
-Cleanup
+When a container loads a JSP it invokes the jspInit() method before servicing any requests. 
+If you need to perform JSP-specific initialization, override the jspInit() method −
+for example :
+public void jspInit()
+{
+   // Initialization code...
+}
+>Execution:
+>Cleanup:
