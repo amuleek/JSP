@@ -24,4 +24,6 @@ void _jspService(HttpServletRequest request, HttpServletResponse response)
 {
    // Service handling code...
 }
+The _jspService() method of a JSP is invoked on request basis.
+This is responsible for generating the response for that request and this method is also responsible for generating responses to all seven of the HTTP methods, i.e, GET, POST, DELETE, etc.
 >Cleanup:
